@@ -1,0 +1,35 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovak]{babel}
+
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[usenames,dvipsnames]{pstricks}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+\usepackage{auto-pst-pdf}
+\usepackage{lipsum}
+
+\newcommand{\predmet}[1]{\noindent\Huge\textbf{\centering#1}\normalsize\medskip\newline}
+\newcommand{\nadpis}[1]{\noindent\huge\textbf{#1}\normalsize}
+\newcommand{\popis}[1]{
+    \begin{center}
+    \fbox{\parbox{0.95\textwidth}{\textit{#1}}}\medskip\newline
+    \end{center}
+}
+\newcommand{\pojem}[2]{\noindent\textbf{#1}:~ #2\smallskip}
+
+\begin{document}
+\predmet{Názov predmetu}
+
+\input{../prednaska1.tex}
+\clearpage
+
+\end{document}
